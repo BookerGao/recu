@@ -1,56 +1,74 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Support - recu</title>
-    <meta name="description" content="Support page for recu.">
+    <title>支持与反馈 - 票迹</title>
+    <meta name="description" content="票迹 App 支持与反馈页面。">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="site">
-        <nav class="nav" aria-label="Main navigation">
-            <a class="brand" href="index.html">recu</a>
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="mailto:ydgaoyolo@gmail.com">Contact</a>
+    <main class="page">
+        <nav class="nav" aria-label="主导航">
+            <a class="brand" href="index.html">
+                <img src="assets/app-icon.png" alt="票迹图标">
+                <span>票迹</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="privacy.html">隐私政策</a>
             </div>
         </nav>
 
         <section class="hero">
-            <div class="eyebrow">Support</div>
-            <h1>Support for recu</h1>
-            <p class="lead">Need help with capture, import, cropping, saving, or restoring a purchase? Send a message and include as much detail as you can.</p>
+            <div class="identity">
+                <img class="app-icon" src="assets/app-icon.png" alt="票迹 App 图标">
+                <div>
+                    <div class="eyebrow">支持与反馈</div>
+                    <h1>需要帮助？</h1>
+                </div>
+            </div>
+            <p class="lead">如果你在拍摄、导入、裁切、保存或恢复购买时遇到问题，请把设备型号、iOS 版本、App 版本和复现步骤一起发给我。</p>
         </section>
 
-        <section class="panel support">
-            <div>
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:ydgaoyolo@gmail.com?subject=recu%20support">ydgaoyolo@gmail.com</a></p>
-                <p>Please include your device model, iOS version, app version, and the steps that led to the issue.</p>
+        <section class="group">
+            <div class="section-title">联系方式</div>
+            <div class="list">
+                <a class="row contact-row" href="mailto:ydgaoyolo@gmail.com?subject=%E7%A5%A8%E8%BF%B9%E6%94%AF%E6%8C%81%E4%B8%8E%E5%8F%8D%E9%A6%88">
+                    <div>
+                        <h2>发送邮件</h2>
+                        <p>反馈问题、建议，或咨询 Pro 恢复购买相关情况。</p>
+                    </div>
+                    <span class="value">ydgaoyolo@gmail.com</span>
+                </a>
             </div>
+        </section>
 
-            <div class="section">
-                <h2>Frequently asked questions</h2>
-                <h3>Where are my tickets saved?</h3>
-                <p>By default, ticket images and metadata are stored locally inside the app on your iPhone.</p>
-
-                <h3>Will deleting the app remove my tickets?</h3>
-                <p>Deleting the app removes local app data. Images that you separately saved to the system Photos library remain in Photos.</p>
-
-                <h3>How do I restore Pro?</h3>
-                <p>Open recu, go to Settings, then choose Restore Purchases in the payment section.</p>
-
-                <h3>Does recu upload my ticket images?</h3>
-                <p>No. recu does not upload your ticket images, notes, folders, or preferences.</p>
+        <section class="group">
+            <div class="section-title">常见问题</div>
+            <div class="list">
+                <div class="row">
+                    <h2>票据保存在哪里？</h2>
+                    <p>默认保存在 App 本地。你可以在设置中开启“保存到相册”，之后每次保存票据时也会把最终图片写入系统相册。</p>
+                </div>
+                <div class="row">
+                    <h2>删除 App 后票据还在吗？</h2>
+                    <p>删除 App 会移除 App 本地数据。已经保存到系统相册的图片会继续保留在相册中。</p>
+                </div>
+                <div class="row">
+                    <h2>如何恢复 Pro？</h2>
+                    <p>打开票迹，进入“设置”，在“付费”区域选择“恢复购买”。请确认当前登录的是购买时使用的 Apple ID。</p>
+                </div>
+                <div class="row">
+                    <h2>票迹会上传我的票据图片吗？</h2>
+                    <p>不会。票迹不会主动上传你的票据图片、备注、文件夹或偏好设置。</p>
+                </div>
             </div>
         </section>
 
         <footer class="footer">
-            <p>Privacy Policy: <a href="privacy.html">Read the privacy policy</a></p>
+            <p>隐私政策：<a href="privacy.html">查看票迹隐私政策</a></p>
         </footer>
     </main>
 </body>
 </html>
-
