@@ -1,89 +1,92 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>隐私政策 - 票迹</title>
-    <meta name="description" content="票迹 App 隐私政策。">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>票迹隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --brand: #2c5140;
+      --text: #1c1c1e;
+      --muted: #636366;
+      --bg: #fbfbfa;
+      --card: #ffffff;
+      --line: rgba(44, 81, 64, 0.18);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand: #c2e0c9;
+        --text: #f2f2f7;
+        --muted: #aeaeb2;
+        --bg: #101110;
+        --card: #1c1d1c;
+        --line: rgba(194, 224, 201, 0.22);
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.72 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 44px 22px 56px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 30px 0 8px;
+      font-size: 20px;
+    }
+    p {
+      margin: 8px 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    a {
+      color: var(--brand);
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-    <main class="page">
-        <nav class="nav" aria-label="主导航">
-            <a class="brand" href="index.html">
-                <img src="assets/app-icon.png" alt="票迹图标">
-                <span>票迹</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">首页</a>
-                <a href="support.html">支持与反馈</a>
-            </div>
-        </nav>
+  <main>
+    <h1>票迹隐私政策</h1>
+    <p class="meta">生效日期：2026 年 6 月 7 日</p>
+    <div class="panel">
+      <p>票迹尊重你的隐私。应用不会要求注册账号，不会接入广告 SDK，不会进行跨 App 或跨网站追踪，也不会主动上传你的票据图片、备注、文件夹或偏好设置。</p>
 
-        <section class="hero">
-            <div class="identity">
-                <img class="app-icon" src="assets/app-icon.png" alt="票迹 App 图标">
-                <div>
-                    <div class="eyebrow">隐私政策</div>
-                    <h1>票迹隐私政策</h1>
-                </div>
-            </div>
-            <p class="lead">票迹尊重你的隐私。App 不需要注册账号，不接入广告 SDK，不进行跨 App 或跨网站追踪，也不会主动上传你的票据图片、备注、文件夹或偏好设置。</p>
-            <p class="muted">生效日期：2026 年 5 月 25 日</p>
-        </section>
+      <h2>本地数据</h2>
+      <p>你拍摄或导入的票据图片、缩略图、备注、收藏和文件夹信息默认保存在当前设备上的 App 本地存储中。删除 App 会同时删除这些本地数据。</p>
 
-        <section class="group">
-            <div class="section-title">数据处理</div>
-            <div class="list">
-                <div class="row">
-                    <h2>我们不收集的内容</h2>
-                    <p>票迹不会收集、上传、出售或共享你的票据图片、备注、文件夹、App 偏好设置或其他个人内容。</p>
-                </div>
-                <div class="row">
-                    <h2>本地存储</h2>
-                    <p>你拍摄或导入的票据图片、缩略图、备注、收藏、文件夹和偏好设置默认保存在当前 iPhone 的 App 本地存储中。删除 App 时，iOS 会一并移除这些本地数据。</p>
-                </div>
-                <div class="row">
-                    <h2>主动分享</h2>
-                    <p>当你使用系统分享功能时，分享内容和接收方由你自行选择。票迹不会自动把你的票据内容分享给第三方。</p>
-                </div>
-            </div>
-        </section>
+      <h2>系统权限</h2>
+      <p>相机权限仅用于拍摄票据。相册读取权限仅用于导入你选择的图片、读取拍摄日期，以及在你开启“保存到相册”后创建或复用“票迹”相册。相册写入权限仅用于把最终票据图片写入“票迹”相册。运动传感器权限仅用于票据卡片的微立体倾斜效果。</p>
 
-        <section class="group">
-            <div class="section-title">系统权限</div>
-            <div class="list">
-                <div class="row">
-                    <h2>相机与相册</h2>
-                    <p>相机权限仅用于拍摄票据。相册读取权限仅用于导入你选择的图片并读取可用的拍摄日期。开启“保存到相册”后，票迹会使用相册写入权限，把最终票据图片保存到系统相册。</p>
-                </div>
-                <div class="row">
-                    <h2>运动传感器</h2>
-                    <p>运动传感器权限仅用于票据卡片的微立体倾斜效果，不用于识别身份或追踪位置。</p>
-                </div>
-                <div class="row">
-                    <h2>App Store 内购</h2>
-                    <p>Pro 解锁通过 Apple 的 App Store 内购完成。付款、账单和退款由 Apple 处理；票迹只读取 Apple 提供的购买权益状态，用于判断是否解锁无限保存。</p>
-                </div>
-            </div>
-        </section>
+      <h2>购买信息</h2>
+      <p>Pro 解锁通过 Apple 的 App Store 内购完成。票迹只读取 Apple 提供的购买权益状态，用于判断是否解锁无限收藏；付款、账单和退款由 Apple 处理。</p>
 
-        <section class="group">
-            <div class="section-title">联系</div>
-            <div class="list">
-                <a class="row contact-row" href="mailto:ydgaoyolo@gmail.com?subject=%E7%A5%A8%E8%BF%B9%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96">
-                    <div>
-                        <h2>隐私相关问题</h2>
-                        <p>如果你对本隐私政策有任何疑问，可以通过邮箱联系。</p>
-                    </div>
-                    <span class="value">ydgaoyolo@gmail.com</span>
-                </a>
-            </div>
-        </section>
+      <h2>数据共享</h2>
+      <p>票迹不会出售你的个人信息，也不会将你的票据内容共享给第三方。你主动使用系统分享功能时，分享的内容和接收方由你自行选择。</p>
 
-        <footer class="footer">
-            <p>Copyright © 2026 票迹。All rights reserved.</p>
-        </footer>
-    </main>
+      <h2>联系我们</h2>
+      <p>如果你对隐私政策有任何问题，请发送邮件至 <a href="mailto:ydgaoyolo@gmail.com?subject=%E7%A5%A8%E8%BF%B9%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96">ydgaoyolo@gmail.com</a>。</p>
+    </div>
+  </main>
 </body>
 </html>
